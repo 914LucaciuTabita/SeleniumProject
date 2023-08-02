@@ -14,8 +14,12 @@ public class Main {
 //
 //        RegisterTest registerTest = new RegisterTest();
 //        registerTest.validRegisterTest();
+//
+//        WishlistTest wishlistTest = new WishlistTest();
+//        wishlistTest.validAddToWishlistTest();
 
-
-
+        Cart cart = new Cart();
+//        cart.addConfigurableProductToCartTest();
+        cart.deleteConfigurableProductFromCartTest();
     }
 }

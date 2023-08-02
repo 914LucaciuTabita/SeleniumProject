@@ -10,6 +10,7 @@ public class LoginTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://qa3magento.dev.evozon.com/");
+
         driver.findElement(By.cssSelector("#header > div > div.skip-links > div > a > span.label")).click();
         driver.findElement(By.cssSelector("#header-account > div > ul > li.last > a")).click();
         driver.findElement(By.id("email")).sendKeys("tabylucaciu@yahoo.com");

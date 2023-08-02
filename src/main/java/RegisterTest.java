@@ -10,11 +10,12 @@ public class RegisterTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://qa3magento.dev.evozon.com/");
+
         driver.findElement(By.cssSelector("#header > div > div.skip-links > div > a > span.label")).click();
         driver.findElement(By.cssSelector("#header-account > div > ul > li:nth-child(5) > a")).click();
         driver.findElement(By.id("firstname")).sendKeys("Tabita");
         driver.findElement(By.id("lastname")).sendKeys("Lucaciu");
-        driver.findElement(By.id("email_address")).sendKeys("tabylucaciu2@yahoo.com");
+        driver.findElement(By.id("email_address")).sendKeys("tabylucaciu3@yahoo.com");
         // increment the value after "tabylucaciu" with 1 everytime
         driver.findElement(By.id("password")).sendKeys("password");
         driver.findElement(By.id("confirmation")).sendKeys("password");
