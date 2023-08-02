@@ -20,6 +20,7 @@ public class Main {
 
         Cart cart = new Cart();
 //        cart.addConfigurableProductToCartTest();
-        cart.deleteConfigurableProductFromCartTest();
+//        cart.deleteConfigurableProductFromCartTest();
+        cart.updateConfigurableProductInCartTest();
     }
 }
