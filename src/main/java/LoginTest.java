@@ -16,8 +16,8 @@ public class LoginTest {
         driver.findElement(By.id("email")).sendKeys("tabylucaciu@yahoo.com");
         driver.findElement(By.id("pass")).sendKeys("password");
         driver.findElement(By.id("send2")).click();
-        String welcomeText = driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col2-left-layout > div > div.col-main > div.my-account > div > div.welcome-msg > p.hello > strong")).getText();
 
+        String welcomeText = driver.findElement(By.cssSelector("body > div > div.page > div.main-container.col2-left-layout > div > div.col-main > div.my-account > div > div.welcome-msg > p.hello > strong")).getText();
         if (welcomeText.equalsIgnoreCase("Hello, Tabita Semida Lucaciu!"))
             System.out.println(greenColorCode + "Success!" + resetColorCode);
         else

@@ -21,8 +21,8 @@ public class RegisterTest {
         driver.findElement(By.id("confirmation")).sendKeys("password");
         driver.findElement(By.id("is_subscribed")).click();
         driver.findElement(By.cssSelector("#form-validate > div.buttons-set > button > span > span")).click();
-        String welcomeText = driver.findElement(By.cssSelector("body > div > div > div.main-container.col2-left-layout > div > div.col-main > div.my-account > div > div.welcome-msg > p.hello > strong")).getText();
 
+        String welcomeText = driver.findElement(By.cssSelector("body > div > div > div.main-container.col2-left-layout > div > div.col-main > div.my-account > div > div.welcome-msg > p.hello > strong")).getText();
         if (welcomeText.equalsIgnoreCase("Hello, Tabita Lucaciu!"))
             System.out.println(greenColorCode + "Successfully registered!" + resetColorCode);
         else
