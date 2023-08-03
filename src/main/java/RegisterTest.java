@@ -1,3 +1,4 @@
+import com.github.javafaker.Faker;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -7,9 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RegisterTest {
-    String greenColorCode = "\u001B[32m";
-    String resetColorCode = "\u001B[0m";
     WebDriver driver = new ChromeDriver();
+    Faker faker = new Faker();
 
     @Before
     public void prepareData(){
@@ -23,8 +23,7 @@ public class RegisterTest {
     public void validRegisterTest() {
         driver.findElement(By.id("firstname")).sendKeys("Tabita");
         driver.findElement(By.id("lastname")).sendKeys("Lucaciu");
-        driver.findElement(By.id("email_address")).sendKeys("tabylucaciu5@yahoo.com");
-        // increment the value after "tabylucaciu" with 1 everytime
+        driver.findElement(By.id("email_address")).sendKeys(faker.bothify("??????##@gmail.com"));
         driver.findElement(By.id("password")).sendKeys("password");
         driver.findElement(By.id("confirmation")).sendKeys("password");
         driver.findElement(By.id("is_subscribed")).click();

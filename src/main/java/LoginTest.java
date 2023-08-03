@@ -7,8 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginTest {
-    String greenColorCode = "\u001B[32m";
-    String resetColorCode = "\u001B[0m";
     WebDriver driver = new ChromeDriver();
 
     @Before

@@ -8,8 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 public class WishlistTest {
-    String greenColorCode = "\u001B[32m";
-    String resetColorCode = "\u001B[0m";
     WebDriver driver = new ChromeDriver();
 
     @Before
