@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver","resources/chromedriver.exe");
-
+//
 //        LoginTest loginTest = new LoginTest();
 //        loginTest.validLoginTest();
 //
@@ -17,10 +17,13 @@ public class Main {
 //
 //        WishlistTest wishlistTest = new WishlistTest();
 //        wishlistTest.validAddToWishlistTest();
-
-        Cart cart = new Cart();
+//
+//        Cart cart = new Cart();
 //        cart.addConfigurableProductToCartTest();
 //        cart.deleteConfigurableProductFromCartTest();
-        cart.updateConfigurableProductInCartTest();
+//        cart.updateConfigurableProductInCartTest();
+//
+//        Products products = new Products();
+//        products.validSortProducts();
     }
 }
