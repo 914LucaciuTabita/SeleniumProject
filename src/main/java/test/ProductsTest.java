@@ -1,3 +1,5 @@
+package test;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Products {
+public class ProductsTest {
     WebDriver driver = new ChromeDriver();
 
     @Before
@@ -43,7 +45,7 @@ public class Products {
 
         Collections.sort(sortedProducts, String.CASE_INSENSITIVE_ORDER);
 
-        assert products.equals(sortedProducts) : "Products are not sorted by name.";
+        assert products.equals(sortedProducts) : "test.Products are not sorted by name.";
     }
 
     @Test
@@ -70,7 +72,7 @@ public class Products {
 
         Collections.sort(sortedProducts, Collections.reverseOrder());
 ///edfrdtgfhj
-        assert products.equals(sortedProducts) : "Products are not sorted by name.";
+        assert products.equals(sortedProducts) : "test.Products are not sorted by name.";
     }
 
     @After
