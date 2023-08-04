@@ -1,0 +1,8 @@
+1) #search
+2) .nav-primary
+3) .header-minicart span.icon
+4) .promos li:last-of-type
+5) .page-header-container .logo img.large
+6) .category-products > div:not(.toolbar-bottom) .sort-by select
+   .category-products > .toolbar .sort-by select
+7) .cart-totals [title='Proceed to Checkout']
