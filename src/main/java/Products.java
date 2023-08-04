@@ -69,7 +69,7 @@ public class Products {
         List<String> sortedProducts = new ArrayList<>(products);
 
         Collections.sort(sortedProducts, Collections.reverseOrder());
-
+///edfrdtgfhj
         assert products.equals(sortedProducts) : "Products are not sorted by name.";
     }
 
